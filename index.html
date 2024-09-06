@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Observation App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Include SunCalc Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/suncalc/1.8.0/suncalc.min.js" defer></script>
+
+    <script src="script.js" defer></script>
+    
+</head>
+
+
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="background-video">
+        <source src="moon1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <div class="container">
+        <h1>Current Moon Phase</h1>
+       
+       
+        <div id="moon-phase">
+            <p id="phase-name"></p>
+            <p id="date"></p>
+            <p id="clock12"></p>
+            <p id="clock24"></p>
+            <img id="moon-image" src="https://widgets.astronomyapi.com/moon-phase/generated/1234567890.png" alt="Moon Phase">
+
+            
+        </div>
+       
+
+    </div>
+    
+    <div class="hero">
+        <nav>
+            <ul>
+                <li><a href="/weather.html">weather</a></li>
+                <li><a href="/stars.html">stars</a></li>
+                <li><a href="/coffee.html">Coffee</a></li>
+                <li><a href="/contactme.html">Contact-Me</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+</body>
+
+</html>
