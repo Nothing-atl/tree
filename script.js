@@ -139,4 +139,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Update every hour
     setInterval(getMoonPhase, 3600000);
+
+    
+
+    
+
 });

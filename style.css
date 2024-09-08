@@ -3,7 +3,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: #fff;
     color: brown;
     display: flex;
     justify-content: center;
@@ -52,6 +52,7 @@ nav ul li a{
     background-color: transparent;
     padding: 30px;
     border-radius: 10px;
+    overflow-y: auto;
 }
 
 #clock12{
@@ -165,6 +166,9 @@ nav ul li a{
         font-size: 10px;
     
     }
+    .zodiac-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row for tablets/mobile */
+    }
 }
 
 /* Styles for screens smaller than 480px (small mobile devices) */
@@ -214,4 +218,59 @@ nav ul li a{
     #clock24{
         font-size:10px;
     }
+    .zodiac-grid {
+        grid-template-columns: 1fr; /* 1 item per row for small screens */
+    }
 }
+
+
+* Styles for the contact section */
+.contact-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+    font-style: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: hsla(48, 95%, 16%, 0.953);
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-list li {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: grey;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.contact-list a:hover {
+    color: #007bff;
+}
+
+.contact-list i {
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #007bff;
+    align-items: right;
+}
+
+
+

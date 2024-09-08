@@ -1,0 +1,138 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1; /* Keeps the video behind the content */
+    object-fit: cover;
+}
+/* Styles for the contact section */
+.contact-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+    font-style: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: hsla(48, 95%, 16%, 0.953);
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-list li {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: grey;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.contact-list a:hover {
+    color: #007bff;
+}
+
+.contact-list i {
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #007bff;
+    align-items: right;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px;
+    background-color: transparent;
+    height: 100%;
+    
+    
+}
+
+.menu-icon .bar {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    z-index: 1000;
+    
+    
+}
+
+/* Navigation Menu (Initially Hidden) */
+#site-navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    color: white;
+    transform: translateX(100%); /* Hidden by default */
+    transition: transform 0.3s ease;
+    z-index: 9999;
+}
+
+#site-navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 50px 0 0;
+    text-align: center;
+    
+}
+
+#site-navigation li {
+    padding: 10px 0;
+}
+
+#site-navigation a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+#site-navigation a:hover {
+    background-color: #575757;
+}
+
+/* Show Menu When Active */
+#site-navigation.active {
+    transform: translateX(0); /* Show the navigation */
+}
+
+/* Utility Class to Hide the Menu */
+.hidden {
+    display: none;
+}
+
+

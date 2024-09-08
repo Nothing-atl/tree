@@ -1,0 +1,128 @@
+body{
+    background-color: black;
+}
+.stars-section {
+    padding: 2em;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
+
+.stars-section h2 {
+    color: violet;
+    font-size: 50px;
+}
+#star-image {
+    width: 400px;
+    height: 350px;
+}
+
+
+.star-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.star-map, .constellation-info, .astronomy-facts, .stargazing-tips {
+    width: 100%;
+    border-radius: 10px solid #ffcc00;
+    border: #ffcc00;
+    text-align: center;
+    
+}
+.star-map h3, .constellation-info h3, .astronomy-facts h3, .stargazing-tips h3  {
+    
+    color: whiteblack;
+    font-size: xx-large;
+}
+.star-map p, .constellation-info p, .astronomy-facts p, .stargazing-tips p{
+    color: gray;
+    
+}
+
+.star-info ul {
+    list-style: none;
+}
+
+.star-info a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.stargazing-tips, .astronomy-facts {
+    margin-top: 1.5em;
+}
+
+iframe {
+    border: none;
+    
+    
+}
+
+
+
+/* Hamburger Menu Icon */
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px;
+    
+}
+
+.menu-icon .bar {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    z-index: 1000;
+    
+}
+
+/* Navigation Menu (Initially Hidden) */
+#site-navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    color: white;
+    transform: translateX(100%); /* Hidden by default */
+    transition: transform 0.3s ease;
+    z-index: 9999;
+}
+
+#site-navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 50px 0 0;
+    text-align: center;
+    
+}
+
+#site-navigation li {
+    padding: 10px 0;
+}
+
+#site-navigation a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+#site-navigation a:hover {
+    background-color: #575757;
+}
+
+/* Show Menu When Active */
+#site-navigation.active {
+    transform: translateX(0); /* Show the navigation */
+}
+
+/* Utility Class to Hide the Menu */
+.hidden {
+    display: none;
+}

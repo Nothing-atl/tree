@@ -1,0 +1,170 @@
+
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1; /* Keeps the video behind the content */
+    object-fit: cover;
+}
+
+.cof {
+    display: flex;
+    height: 80vh; /* Ensure that both sections fill the same height */
+}
+
+.funfacts {
+    box-sizing: border-box;
+    width: 50%;
+    color: #fff;
+    margin: auto;
+    margin-left: 20px;
+    
+    background-attachment: scroll;
+
+    /* Scrollable funfacts section */
+    overflow-y: auto;
+    max-height: 110%; /* Matches the height of the parent container */
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+}
+
+.funfacts p {
+    margin: 20px 0;
+    font-size: x-large;
+    color: white;
+    
+}
+.types-of-coffee{
+    position: absolute; /* Make it positionable anywhere */
+    top: -2%;           /* Adjust this value to move the arrow vertically */
+    left: 85.5%;          /* Move it horizontally to the center */
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 2rem;    
+    color: rgb(64, 39, 3);
+    background-color: white;
+    height: 0%;
+    
+    
+    
+}
+.types-of-coffee h1{
+    font-size: 2rem;    
+    color: rgb(66, 33, 16);
+    background-color: white;
+    height: 0%;
+    
+    
+}
+
+.types {
+    color: rgb(103, 71, 1);
+    background-color: transparent;
+    width: 30%;
+    
+    text-align: center;
+    font-weight: bold;
+    left:70%;
+    margin-top: 150px;
+    /* Scrollable types section */
+    overflow-y: auto;
+    max-height: 80vh; /* Matches the height of the parent container */
+    
+}
+.types p{
+    overflow-y: auto;
+    
+}
+
+
+.arrow {
+    position: absolute; /* Make it positionable anywhere */
+    top: 83%;           /* Adjust this value to move the arrow vertically */
+    left: 84%;          /* Move it horizontally to the center */
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 2rem;    /* Size of the arrow */
+    color: lightskyblue;
+    cursor: pointer;     /* Makes it clickable */
+    animation: bounce 2s infinite; /* Optional bounce animation */
+}
+
+/* Optional: Bounce animation for the arrow */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+
+/* Hamburger Menu Icon */
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px;
+    
+}
+
+.menu-icon .bar {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    z-index: 1000;
+    
+}
+
+/* Navigation Menu (Initially Hidden) */
+#site-navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    color: white;
+    transform: translateX(100%); /* Hidden by default */
+    transition: transform 0.3s ease;
+    z-index: 9999;
+}
+
+#site-navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 50px 0 0;
+    text-align: center;
+    
+}
+
+#site-navigation li {
+    padding: 10px 0;
+}
+
+#site-navigation a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+#site-navigation a:hover {
+    background-color: #575757;
+}
+
+/* Show Menu When Active */
+#site-navigation.active {
+    transform: translateX(0); /* Show the navigation */
+}
+
+/* Utility Class to Hide the Menu */
+.hidden {
+    display: none;
+}

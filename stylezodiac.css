@@ -1,0 +1,276 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: brown;
+    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1; /* Keeps the video behind the content */
+    object-fit: cover;
+}
+
+/* Zodiac Landing Page Styles */
+.zodiac-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    width:95%;
+    height:100%;
+}
+.zodiac-container h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.zodiac-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+}
+.zodiac-grid a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Individual Zodiac cards */
+.zodiac-card {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.zodiac-card img {
+    width: 100px;
+    height: 100px;
+}
+
+.zodiac-card h2 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+
+.zodiac-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Zodiac Detail Page */
+.zodiac-detail-container {
+    width:80%;
+    height:80%;
+    padding: 20px;
+    border: 0px solid #ccc;
+    background-color: #fff;
+    margin: 0 auto;
+    color:lightskyblue;
+    text-align: center;
+    /*margin-left: -10px;
+    /*max-width: 800px; /* Maximum width for better readability */
+   /* height: 400px; /* Adjust this value to increase the length */
+    overflow-y: auto; /* Allows scrolling if content exceeds the container height */
+}
+.zodiac-detail-container img {
+    
+    width: 200px;
+    height: 200px;
+    
+    border: 25px solid #fff;
+    
+}
+#Element {
+    width:300px;
+    height:400px;
+    background-color: white;
+    text-align: left;
+    
+}
+#Element p{
+    color: rgb(99, 2, 2);
+    background-color: rgb(239, 251, 251);
+    line-height: 1.5em;
+}
+#Element a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#Element b {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+   
+}
+#Personality-Traits {
+    width:630px;
+    height:730px;
+    background-color: white;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    align-self: center;
+    text-align: left;
+    margin-left: 22%;
+}
+#Personality-Traits h1{
+   font-weight: bold;
+   font-size: xx-large;
+   text-align: center;
+   color: black;
+}
+#Personality-Traits a{
+    color:black;
+    font-size: 21px;
+    font-weight: bold;
+}
+#Personality-Traits p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: rgb(94, 88, 88);
+
+}
+.zodiac-detail-container h1 {
+    font-size: 2.7em;
+    line-height: 2.0em;
+    color: lightskyblue;
+    text-align: center;
+}
+#about p {
+    padding: 1px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: gray;
+    text-align: left;
+}
+#about h1{
+    font-weight: bold;
+   font-size: xx-large;
+   text-align: center;
+   color: violet;
+}
+#about b{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+#about a{
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+nav{
+    height: 10%;
+}
+.site-navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    width:100%
+}
+
+.site-navigation li {
+    display: inline;
+}
+
+.site-navigation a {
+    color: white;
+    text-decoration: none;
+    
+    padding: 14px 20px;
+    display: block;
+}
+
+.site-navigation a:hover {
+    background-color: #575757;
+}
+
+
+
+/* Hamburger Menu Icon */
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px;
+    
+}
+
+.menu-icon .bar {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    z-index: 1000;
+    
+}
+
+/* Navigation Menu (Initially Hidden) */
+#site-navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    color: white;
+    transform: translateX(100%); /* Hidden by default */
+    transition: transform 0.3s ease;
+    z-index: 9999;
+}
+
+#site-navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 50px 0 0;
+    text-align: center;
+    
+}
+
+#site-navigation li {
+    padding: 10px 0;
+}
+
+#site-navigation a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+#site-navigation a:hover {
+    background-color: #575757;
+}
+
+/* Show Menu When Active */
+#site-navigation.active {
+    transform: translateX(0); /* Show the navigation */
+}
+
+/* Utility Class to Hide the Menu */
+.hidden {
+    display: none;
+}
