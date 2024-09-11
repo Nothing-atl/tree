@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleweather.css">
+    <title>Weather</title>
+    <script src="menu.js"></script>
+
+</head>
+<body>
+    <!-- Hamburger Menu Icon -->
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav id="site-navigation" >
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="weather.html">Weather</a></li>
+            <li><a href="stars.html">Stars</a></li>
+            <li><a href="coffee.html">Coffee</a></li>
+            <li><a href="zodiac.html">Zodiac Signs</a></li>
+            <li><a href="contactme.html">Contact Me</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>
+
+    
+    <h1>Current Weather</h1>
+    <div id="weather-info">
+       <script src="weather.js"></script>
+
+        <p>Loading weather data...</p>
+    </div>
+    <div id="forecast-info">Loading 15-day forecast...</div>
+    <div id="hourly-info">Loading last 7 days hourly data...</div>
+    
+    <div id="historical-info">Loading historical data...</div>
+    <button onclick="downloadCSV()">Download Historical Data (CSV)</button>
+
+</body>
+</html>

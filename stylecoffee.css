@@ -36,6 +36,7 @@
     font-size: x-large;
     color: white;
     
+    
 }
 .types-of-coffee{
     position: absolute; /* Make it positionable anywhere */
@@ -46,7 +47,7 @@
     color: rgb(64, 39, 3);
     background-color: white;
     height: 0%;
-    
+    font-family: fantasy;
     
     
 }
@@ -75,6 +76,7 @@
 }
 .types p{
     overflow-y: auto;
+    font-family: fantasy;
     
 }
 
@@ -167,4 +169,12 @@
 /* Utility Class to Hide the Menu */
 .hidden {
     display: none;
+}
+
+.help{
+    font-size: xx-large;
+    color: red;
+    text-align: center;
+    font-family:fantasy;
+    
 }

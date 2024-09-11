@@ -31,6 +31,7 @@ body {
 .zodiac-container h1 {
     font-size: 2em;
     color: #333;
+    font-family: fantasy;
 }
 
 .zodiac-grid {
@@ -86,6 +87,9 @@ body {
    /* height: 400px; /* Adjust this value to increase the length */
     overflow-y: auto; /* Allows scrolling if content exceeds the container height */
 }
+.zodiac-detail-container h1{
+    font-family: fantasy;
+}
 .zodiac-detail-container img {
     
     width: 200px;
@@ -119,8 +123,8 @@ body {
    
 }
 #Personality-Traits {
-    width:630px;
-    height:730px;
+    width:auto;
+    height:auto;
     background-color: white;
     border: 5px solid #ccc;
     border-radius: 10px;
@@ -128,7 +132,7 @@ body {
     padding: 10px;
     align-self: center;
     text-align: left;
-    margin-left: 22%;
+    margin: 10%;
 }
 #Personality-Traits h1{
    font-weight: bold;

@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zodiac Signs</title>
+    <title>Stars</title>
     <link rel="stylesheet" href="stylestars.css">
-    <script src="menu.js"></script>
+    <script src="stars.js"></script>
 </head>
 <body>
+    <img id="background-img" src="images/Milky-Way-and-stars-in-the-night-sky.jpg" alt="milkyway">
     <!-- Hamburger Menu Icon -->
     <div class="menu-icon" onclick="toggleMenu()">
         <div class="bar"></div>
@@ -24,6 +25,7 @@
             <li><a href="coffee.html">Coffee</a></li>
             <li><a href="zodiac.html">Zodiac Signs</a></li>
             <li><a href="contactme.html">Contact Me</a></li>
+            <li><a href="help.html">Help</a></li>
         </ul>
     </nav>
 
@@ -35,39 +37,295 @@
                 <h3>Zodiac Stars</h3>
                 <img id="star-image" src="images/stars.jpg" alt="stars">
                 <p>Visit the <a href="https://stellarium-web.org" target="_blank">Stellarium Web</a> for an interactive star map.</p>
-
+   
             </div>
             <div class="constellation-info">
+                <script src="stars.js"></script>
                 <h3>Constellations</h3>
-                <p>Learn about the most famous constellations and when you can see them.</p>
-                <ul>
-                    <li><a href="orion.html">Orion</a></li>
-                    <li><a href="ursa-major.html">Ursa Major</a></li>
-                    <li><a href="scorpius.html">Scorpius</a></li>
-                    <li><a href="usrsa-minor.html">Ursa minor</a></li>
-                    <li><a href="cassiopeia.html">Cassiopeia</a></li>
-                    <li><a href="leo.html">Leo</a></li>
-                    <li><a href="cygnus.html">Cygnus</a></li>
-                    <li><a href="taurus.html">Taurus</a></li>
-                    <li><a href="pegasus.html">Pegasus</a></li>
-                    <li><a href="canis-major.html">Canis major</a></li>
-                    <li><a href="aquarius.html">Aquarius</a></li>
-                    <li><a href="lyra.html">Lyra</a></li>
-                    <li><a href="centaurus.html">Centaurus</a></li>
-                    <li><a href="andromeda.html">Andromeda</a></li>
-                    <li><a href="sagittarius.html">Sagittarius</a></li>
-                </ul>
+                <p>Learn about the most famous constellations.</p>
+                <div class="constellations">
+                    
+                <div class="constellation" onclick="toggleDetails('details1')">
+                    <h2>Orion</h2>
+                    <div id="details1" class="details">
+                        <textarea placeholder="Mythology: In Greek mythology, Orion was a mighty hunter, known for his unparalleled skills and pride. There are various myths surrounding his death, one of the most popular being that he was killed by a scorpion, which is represented by the constellation Scorpius.
+                        Facts: Orion is one of the most recognizable constellations in the night sky, famous for its distinctive 'belt' made of three bright stars: Alnitak, Alnilam, and Mintaka. It is visible across the world and is often used as a reference point to find other celestial objects."></textarea>
+                        
+                    </div>
+                </div>
+                <div class="constellation" onclick="toggleDetails('details2')">
+                    <h2>Ursa major</h2>
+                    <div id="details2" class="details">
+                        <textarea placeholder="Mythology: Ursa Major, or the 'Great Bear', is associated with several myths, the most famous being the Greek myth of Callisto. Zeus transformed Callisto into a bear to hide her from his jealous wife Hera, and she was placed in the sky as this constellation.
+                        Facts: Ursa Major contains the Big Dipper, which is part of the larger constellation and one of the most well-known asterisms. The constellation is visible throughout the year in most of the Northern Hemisphere."></textarea>
+                    </div>
+                </div>
+                <div class="constellation" onclick="toggleDetails('details3')">
+                    <h2>Scorpius</h2>
+                    <div id="details3" class="details">
+                        <textarea placeholder="Mythology: According to Greek mythology, Scorpius is the scorpion that killed Orion, the great hunter. It is said that both constellations were placed on opposite sides of the sky so that Orion would never be stung again.
+                        Facts: Scorpius is a large and bright constellation best seen in the summer months. Its most famous star is Antares, a red supergiant often referred to as the 'heart of the scorpion'"></textarea>
+                    </div>
+                </div>
+                <div class="constellation" onclick="toggleDetails('details4')">
+                    <h2>Ursa minor</h2>
+                    <div id="details4" class="details">
+                        <textarea placeholder="Mythology: Like Ursa Major, Ursa Minor (the 'Little Bear') is tied to the myth of Callisto. Her son, Arcas, was also transformed into a bear and placed in the sky near his mother.
+                        Facts: Ursa Minor contains Polaris, the North Star, which has been used for centuries by navigators to find true north. The constellation is smaller than Ursa Major but equally significant in celestial navigation."></textarea>
+                    </div>
+                </div>
+                <div class="constellation" onclick="toggleDetails('details5')">
+                    <h2>Cassiopeia</h2>
+                    <div id="details5" class="details">
+                        <textarea placeholder="Mythology: Cassiopeia was the queen of Aethiopia in Greek mythology, known for her beauty and vanity. She boasted that she and her daughter Andromeda were more beautiful than the sea nymphs, angering Poseidon.
+                        Facts: Cassiopeia is easily recognized by its distinctive 'W' or 'M' shape, depending on its orientation in the sky. It is a prominent feature of the northern sky and is circumpolar, meaning it is visible all year round in many places."></textarea>
+                    </div>
+                </div>
+                <div class="constellation" onclick="toggleDetails('details6')">
+                    <h2>Leo</h2>
+                    <div id="details6" class="details">
+                        <textarea placeholder="Mythology: Leo represents the Nemean Lion, a beast from Greek mythology that Hercules was tasked with slaying as one of his twelve labors. The lion's impervious skin made it a formidable opponent, but Hercules ultimately triumphed.
+                        Facts: Leo is best seen in the springtime and contains bright stars such as Regulus and Denebola. It is one of the zodiac constellations and is easily recognized by its lion-like shape."></textarea>
+                    </div>
+                </div>
+                <div class="constellation" onclick="toggleDetails('details7')">
+                    <h2>Cygnus</h2>
+                    <div id="details7" class="details">
+                        <textarea placeholder="Mythology: In Greek mythology, Cygnus represents a swan, often associated with the story of Zeus transforming into a swan or the tale of Phaethon’s friend Cygnus, who was turned into a swan by the gods.
+                        Facts: Cygnus is best known for its bright star Deneb, one of the stars that forms the Summer Triangle. The constellation is shaped like a cross and is located in the Milky Way, making it a stunning sight in dark skies"></textarea>
+                    </div>
+                </div>
+                <div class="constellation" onclick="toggleDetails('details8')">
+                    <h2>Taurus</h2>
+                    <div id="details8" class="details">
+                        <textarea placeholder="Mythology: Taurus represents the bull that Zeus transformed into to abduct Europa in Greek mythology. Another myth ties it to the Cretan bull from the story of Theseus and the Minotaur.
+                        Facts: Taurus is home to two famous star clusters, the Pleiades and the Hyades. The bright star Aldebaran, representing the bull’s eye, is one of the most noticeable stars in the night sky."></textarea>
+                    </div>
+                </div>
+                <div class="constellation" onclick="toggleDetails('details9')">
+                    <h2>Pagasus</h2>
+                    <div id="details9" class="details">
+                        <textarea placeholder="Mythology: Pegasus was the winged horse born from the blood of Medusa when she was slain by Perseus. In mythology, he helped heroes such as Bellerophon defeat the Chimera.
+                        Facts: The Pegasus constellation is one of the largest in the sky and is best known for the 'Great Square of Pegasus', a large asterism that helps stargazers locate nearby constellations."></textarea>
+                    </div>
+                </div>
+                <div class="constellation" onclick="toggleDetails('details10')">
+                    <h2>Canis major</h2>
+                    <div id="details10" class="details">
+                        <textarea placeholder="Mythology: Canis Major represents one of Orion’s hunting dogs in Greek mythology. It is often depicted as chasing the hare, represented by the constellation Lepus.
+                        Facts: Canis Major contains Sirius, the brightest star in the night sky, often called the 'Dog Star'. The constellation is visible in the winter and plays an important role in various cultures' myths."></textarea>
+                    </div>
+                </div>
+                <div class="constellation" onclick="toggleDetails('details11')">
+                    <h2>Aquarius</h2>
+                    <div id="details11" class="details">
+                        <textarea placeholder="Mythology: Aquarius is often associated with Ganymede, the cupbearer to the gods in Greek mythology. Zeus abducted him to serve the gods on Mount Olympus.
+                        Facts: Aquarius is one of the zodiac constellations and is often depicted as a man pouring water. It is best seen during autumn and contains several deep-sky objects, including the Helix Nebula."></textarea>
+                    </div>
+                </div>
+                <div class="constellation" onclick="toggleDetails('details12')">
+                    <h2>Lyra</h2>
+                    <div id="details12" class="details">
+                        <textarea placeholder="Mythology: Lyra represents the lyre, a musical instrument, in Greek mythology. It is associated with Orpheus, the legendary musician who could charm all living things with his music.
+                        Facts: Lyra contains the bright star Vega, one of the brightest stars in the night sky and part of the Summer Triangle. The constellation is small but prominent, especially in the summer."></textarea>
+                    </div>
+                </div>
+                <div class="constellation" onclick="toggleDetails('details13')">
+                    <h2>Centaurus</h2>
+                    <div id="details13" class="details">
+                        <textarea placeholder="Mythology: Centaurus represents the wise centaur Chiron, who was a teacher to many Greek heroes. Unlike other centaurs, Chiron was known for his intelligence and kindness.
+                        Facts: Centaurus is best seen in the southern hemisphere and contains two of the brightest stars in the sky, Alpha Centauri and Beta Centauri. Alpha Centauri is also the closest star system to Earth."></textarea>
+                    </div>
+                </div>
+                <div class="constellation" onclick="toggleDetails('details14')">
+                    <h2>Andromeda</h2>
+                    <div id="details14" class="details">
+                        <textarea placeholder="Mythology: In Greek mythology, Andromeda was the daughter of Cassiopeia, who was chained to a rock as a sacrifice to a sea monster. She was rescued by Perseus, who later married her.
+                        Facts: Andromeda is famous for containing the Andromeda Galaxy, the nearest spiral galaxy to the Milky Way and visible to the naked eye under dark skies."></textarea>
+                    </div>
+                </div>
+                <div class="constellation" onclick="toggleDetails('details15')">
+                    <h2>Sagittarius</h2>
+                    <div id="details15" class="details">
+                        <textarea placeholder="Mythology: Sagittarius is often depicted as a centaur archer, associated with the centaur Chiron or with the Babylonian god Nergal, a divine archer.
+                        Facts: Sagittarius is a zodiac constellation and is best seen in the summer. It points towards the center of the Milky Way and contains several notable deep-sky objects, including the Lagoon Nebula and the Sagittarius Star Cloud."></textarea>
+                    </div>
+                    
+                </div>
+                
+            </div>
             </div>
         </div>
     
         <div class="stargazing-tips">
             <h3>Stargazing Tips</h3>
-            <p>Find out the best times and tools to make the most of your stargazing experience.</p>
+            <h4> 1. Move away from city lights</h4>
+            <p> Cities are filled with light pollution caused by streetlamps, buildings and cars that drown out dimmer stars and planets in the sky.</p>
+            <h4> 2. Find a clear spot where you can see as close to the horizon as possible</h4>
+            <p> Make sure tall buildings and trees are not blocking your view as you stargaze. Getting higher up on mountain tops can give you a great vantage point.</p>
+            <h4> 3. Check the weather forecast</h4>
+            <p> Nothing ruins a night of stargazing like the sudden appearance of clouds. Also make sure to dress for the weather: nights can get chilly all year round!</p>
+            <br>
+        
         </div>
-    
-        <div class="astronomy-facts">
-            <h3>Astronomy Facts</h3>
-            <p>Did you know the sun is a G-type main-sequence star? Learn more interesting facts about stars.</p>
+        <br><br>
+        <img id="star-finder" src="images/star-finder.jpg" alt="star-finder" class="small-image" onclick="toggleImageSize()">
+        <p> Star Finder (click to enlarge)</p>
+        <div class="star-classifications">
+            <h3>Star Classification</h3>
+            <p>Stars are classified by their spectral type, which reflects their temperature and the light they emit. The most widely used classification system is the Morgan–Keenan (MK) system, which groups stars into seven main categories based on their surface temperature, color, and spectral lines. These categories are: O, B, A, F, G, K, and M. Here’s a breakdown of each:</p>
+            <div class="star-class-types">
+            <div class="types">
+            <h4> O-Type Stars</h4>
+            <p><b> Temperature: </b> > 30,000 K <br>
+                <b>Color: </b> Blue<br>
+                <b>Characteristics: </b> O-type stars are extremely hot, bright, and massive. They emit large amounts of ultraviolet light and have short lifespans due to their high energy output. These stars are rare but very influential in shaping the surrounding interstellar medium.<br>
+                <b>Examples: </b> Zeta Puppis, Theta1 Orionis C</p>
+                
+            </div>
+            <div class="types">
+            <h4> B-Type Stars</h4>
+            <p><b> Temperature: </b>  10,000 – 30,000 K <br>
+                <b>Color: </b> Blue-White<br>
+                <b>Characteristics: </b> B-type stars are slightly cooler than O-types but still very bright and luminous. They have strong hydrogen spectral lines and tend to form in large clusters. These stars also have short lives, typically ending in supernovae.<br>
+                <b>Examples: </b> Rigel, Spica</p>
+                
+            </div>    
+            <div class="types">
+                <h4> A-Type Stars</h4>
+                <p><b> Temperature: </b>  7,500 – 10,000 K <br>
+                    <b>Color: </b> White<br>
+                    <b>Characteristics: </b> A-type stars are white in color and have strong hydrogen lines in their spectra. They are among the more common stars visible to the naked eye and are often seen in the main sequence stage.<br>
+                    <b>Examples: </b> Sirius, Vega</p>
+                    
+            </div>
+            <div class="types">
+                <h4> F-Type Stars</h4>
+                <p><b> Temperature: </b> 6,000 – 7,500 K <br>
+                    <b>Color: </b> Yellow-White <br>
+                    <b>Characteristics: </b>  F-type stars have moderate temperatures and show metal lines (like calcium) in their spectra. These stars are stable and have relatively long lifespans compared to the hotter types.<br>
+                    <b>Examples: </b> Procyon, Canopus </p>
+                    
+                </div>
+            <div class="types">
+                <h4> G-Type Stars</h4>
+                <p><b> Temperature: </b> 5,200 – 6,000 K <br>
+                    <b>Color: </b> Yellow<br>
+                    <b>Characteristics: </b> G-type stars, like our Sun, are moderate in size and temperature. They emit a yellowish light and are rich in elements heavier than helium. G-type stars often live long enough to allow for the development of planetary systems.<br>
+                    <b>Examples: </b> The Sun, Alpha Centauri A</p>
+                    
+                </div>
+                <div class="types">
+            <h4> K-Type Stars</h4>
+            <p><b> Temperature: </b>3,700 – 5,200 K <br>
+                <b>Color: </b> Orange<br>
+                <b>Characteristics: </b> K-type stars are cooler and more orange than G-type stars. They have long lifespans and are more common in the universe. These stars are ideal for potentially hosting planets with life due to their stability and longevity.<br>
+                <b>Examples: </b> Arcturus, Aldebaran</p>
+                
+            </div>
+            <div class="types">
+                <h4> M-Type Stars</h4>
+                <p><b> Temperature: </b>< 3,700 K <br>
+                    <b>Color: </b> Red<br>
+                    <b>Characteristics: </b> M-type stars, also known as red dwarfs, are the coolest and most common stars in the universe. Despite their dimness, they have extremely long lifespans, often lasting trillions of years. Many planets have been found orbiting M-type stars.                    <br>
+                    <b>Examples: </b> Proxima Centauri, Barnard's Star</p>
+                    
+                </div>
+            </div>
+       
+        </div>
+        <div class="famous-stars">
+            <h3> Famous Stars</h3>
+            <p>Throughout history, certain stars have held special significance in navigation, mythology, and astronomy. Here is a list of some of the most famous stars and their importance:</p>
+           <div class="fstars">
+            <div class="stars">
+                <h4> Polaris (North Star)</h4>
+                <p> <b> Constellation:</b> Ursa Minor <br>
+                    <b> Significance: </b> Polaris is perhaps the most famous navigational star, used for centuries to find true north. It is almost directly aligned with Earth's rotational axis, making it appear nearly stationary in the sky, while other stars rotate around it. </p>
+            </div>
+            <div class="stars">
+                <h4> Sirius (Dog Star)</h4>
+                <p> <b> Constellation:</b> Canis Major <br>
+                    <b> Significance: </b> Sirius is the brightest star in the night sky and was historically significant to ancient civilizations such as the Egyptians, who used its rising to predict the flooding of the Nile. Its name comes from the Greek word for "glowing." </p>
+            </div>
+
+            <div class="stars">
+                <h4> Betelgeuse</h4>
+                <p> <b> Constellation:</b> Orion <br>
+                    <b> Significance: </b> Betelgeuse is a red supergiant star and one of the largest visible stars in the sky. It marks the shoulder of Orion the Hunter. Due to its size and variability, it is expected to go supernova within the next 100,000 years. </p>
+            </div>
+
+            <div class="stars">
+                <h4> Rigel</h4>
+                <p> <b> Constellation:</b> Orion <br>
+                    <b> Significance: </b> Rigel is a bright blue supergiant star, representing Orion’s foot. It is one of the most luminous stars in our galaxy and often studied for its unique properties. </p>
+            </div>
+
+            <div class="stars">
+                <h4> Alpha Centauri</h4>
+                <p> <b> Constellation:</b> Centaurus <br>
+                    <b> Significance: </b> Alpha Centauri is the closest star system to Earth, just 4.37 light-years away. It consists of three stars, including Proxima Centauri, the nearest known exoplanetary host. It has been a target of interest for space exploration. </p>
+            </div>
+
+            <div class="stars">
+                <h4> Antares</h4>
+                <p> <b> Constellation:</b> Scorpius  <br>
+                    <b> Significance: </b> Antares is a red supergiant and one of the brightest stars in the sky. Its name means "rival of Mars" due to its reddish color. It marks the heart of the scorpion in the constellation Scorpius. </p>
+            </div>
+
+            <div class="stars">
+                <h4> Vega</h4>
+                <p> <b> Constellation:</b> Lyra <br>
+                    <b> Significance: </b> Vega is the fifth-brightest star in the night sky and one of the cornerstones of the Summer Triangle asterism. It was once the northern pole star and will be again due to the precession of the Earth's axis. </p>
+            </div>
+
+            <div class="stars">
+                <h4> Aldebaran</h4>
+                <p> <b> Constellation:</b> Taurus <br>
+                    <b> Significance: </b> Aldebaran is the eye of the bull in the constellation Taurus and one of the brightest stars in the night sky. It is an important reference star and has been mentioned in various cultural mythologies. </p>
+            </div>
+
+            <div class="stars">
+                <h4> Capella</h4>
+                <p> <b> Constellation:</b> Auriga <br>
+                    <b> Significance: </b> Capella is one of the brightest stars visible from Earth and has been used in navigation. It represents the she-goat in mythology, often associated with the myth of the golden fleece. </p>
+            </div>
+
+            <div class="stars">
+                <h4> Arcturus</h4>
+                <p> <b> Constellation:</b> Boötes <br>
+                    <b> Significance: </b> Arcturus is one of the brightest stars visible from Earth and can be found by following the curve of the Big Dipper’s handle. It has been used as a guiding star for sailors and is known for its orange hue. </p>
+            </div>
+
+            <div class="stars">
+                <h4> Procyon</h4>
+                <p> <b> Constellation:</b> Canis Minor <br>
+                    <b> Significance: </b> Procyon is part of the Winter Triangle and is the eighth-brightest star in the night sky. Its name means "before the dog" in Greek, as it rises before Sirius, the Dog Star.  </p>
+            </div>
+            <div class="stars">
+                <h4> Altair</h4>
+                <p> <b> Constellation:</b> Aquila <br>
+                    <b> Significance: </b> Altair is part of the Summer Triangle asterism and is one of the closest visible stars to Earth. It has featured prominently in various mythologies, including the story of the cowherd and the weaver girl in Chinese folklore. </p>
+            </div>
+            <div class="stars">
+                <h4> Fomalhaut</h4>
+                <p> <b> Constellation:</b> Piscis Austrinus <br>
+                    <b> Significance: </b> Fomalhaut is one of the brightest stars in the southern hemisphere and has been a significant navigational star. It is part of a young planetary system and is one of the few stars with directly imaged exoplanets. </p>
+            </div>
+            <div class="stars">
+                <h4> Spica</h4>
+                <p> <b> Constellation:</b> Virgo  <br>
+                    <b> Significance: </b> Spica is the brightest star in Virgo and has been associated with agriculture and harvest in many cultures. It is part of an eclipsing binary system and is a key star used for sky orientation. </p>
+            </div>
+            <div class="stars">
+                <h4> Deneb</h4>
+                <p> <b> Constellation:</b> Cygnus <br>
+                    <b> Significance: </b> Deneb is the brightest star in Cygnus and forms one corner of the Summer Triangle. It is one of the largest white supergiants known and lies at a great distance, making it one of the most luminous stars visible. </p>
+            </div>
+
+
+        </div>
+
         </div>
     </div>
     

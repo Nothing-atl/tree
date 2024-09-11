@@ -20,7 +20,18 @@
         <source src="videos/moon1.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    
+    <nav id="site-navigation" >
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="weather.html">Weather</a></li>
+            <li><a href="stars.html">Stars</a></li>
+            <li><a href="coffee.html">Coffee</a></li>
+            <li><a href="zodiac.html">Zodiac Signs</a></li>
+            <li><a href="contactme.html">Contact Me</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
         <h1>Current Moon Phase</h1>
        
@@ -31,26 +42,31 @@
             <p id="clock12"></p>
             <p id="clock24"></p>
             <img id="moon-image" src="https://widgets.astronomyapi.com/moon-phase/generated/1234567890.png" alt="Moon Phase">
-
-            
         </div>
        
 
     </div>
     
-    <div class="hero">
+    <!--<div class="hero">
         <nav>
             <ul>
-                <li><a href="weather.html">weather</a></li>
-                <li><a href="zodiac.html" >zodiac</a></li>
-                <li><a href="stars.html">stars</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="zodiac.html" >Zodiac</a></li>
+                <li><a href="stars.html">Stars</a></li>
                 <li><a href="coffee.html">Coffee</a></li>
                 <li><a href="contactme.html" >Contact Me</a></li>
                 <li><a href="help.html">Help</a></li>
             </ul>
         </nav>
+    </div> -->
+    <div class="APOD">
+        <h1> APOD </h1>
+        <img id="apod-image" alt="Astronomy Picture of the Day" class="small-image" onclick="toggleImageSize()">
+        <p id="apod-title"></p>
+        <p  id="apod-description"></p>
+        <script src="apod.js" defer></script>
+    
     </div>
-x
     
 </body>
 

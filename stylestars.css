@@ -1,6 +1,18 @@
 body{
     background-color: black;
+    font-family: fantasy;
 }
+
+#background-img {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1; /* Keeps the video behind the content */
+    object-fit: cover;
+}
+
 .stars-section {
     padding: 2em;
     background-color: transparent;
@@ -19,7 +31,7 @@ body{
 
 
 .star-info {
-    display: flex;
+    display:flex;
     justify-content: space-between;
     padding: 1em;
 }
@@ -31,14 +43,20 @@ body{
     text-align: center;
     
 }
-.star-map h3, .constellation-info h3, .astronomy-facts h3, .stargazing-tips h3  {
+.star-map h3, .constellation-info h3, .star-classifications h3, .stargazing-tips h3 , .famous-stars h3 {
     
-    color: whiteblack;
-    font-size: xx-large;
+    color: white;
+    font-size: 40px;
 }
-.star-map p, .constellation-info p, .astronomy-facts p, .stargazing-tips p{
-    color: gray;
+.star-map p,  .constellation-info p{
+    color: white;
     
+}
+.star-classifications p , .famous-stars p{
+    color: white;
+    /*background-color: rgba(116, 127, 205, 0.7);*/
+    border-radius: 20px;
+    font-size: x-large;
 }
 
 .star-info ul {
@@ -48,20 +66,179 @@ body{
 .star-info a {
     color: #ffcc00;
     text-decoration: none;
+    font-size: large;
 }
 
-.stargazing-tips, .astronomy-facts {
+.stargazing-tips, .star-classifications {
     margin-top: 1.5em;
 }
 
 iframe {
     border: none;
     
+}
+
+.stargazing-tips{
+    width: 95%;
+    height: auto;
+    background-color: rgba(128,128,128,0.6);
+    color: white;
+    border-radius: 30px;
+    border: 10px solid rgba(128,128,128,0.6);
+    
+}
+.stargazing-tips h4{
+    color: white;
+    text-align: left;
+    font-size:30px ;
+    margin: 0;
+    
+  
+}
+.stargazing-tips p{
+    text-align: left;
+    font-size: 20px;
+    margin: 1;
     
 }
 
 
+.constellations{
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 3;
+    align-items: center;
+    background-color: transparent;
+    padding: 30px;
 
+    
+}
+.constellation {
+    width: 25%;
+    padding:1%;
+    margin: 1%;
+    max-width: 600px;
+    
+    cursor: pointer;
+    border: 1px solid transparent;
+    align-items: center;
+    border-radius: 5px;
+    
+    background-color: rgba(94, 59, 59, 0.8);
+    transition: background-color 0.3s;
+}
+.constellation h2{
+    color: orange;
+    font-size: large;
+}
+
+.constellation:hover {
+    background-color: gray;
+}
+
+.details {
+    
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: black;
+    height: fit-content;
+    max-height: 0; /* Initially, the dropdown is hidden */
+    transition: max-height 0.5s ease-out; /* Smooth*/
+    overflow-y: auto;
+   
+   
+}
+
+.details textarea {
+    width: 100%;
+    height: 800px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    overflow-y: auto;
+    color: #ddd;
+    background-color: #000;
+   
+    
+}
+
+.details.show {
+    
+    z-index: 9999;
+    color: black;
+    display: block; /* Make it visible */
+    max-height: 200px; /* Adjust according to your textarea height */
+    padding: 10px; /* Add padding when showing */
+    transition: max-height 0.5s ease-in, padding 0.5s ease-in; /* Smooth transition */
+}
+
+
+/* Small image styling */
+.small-image {
+    width: 40%; /* Initial small size */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    cursor: pointer; /* Pointer cursor to indicate clickability */
+}
+
+/* Enlarged image styling */
+.large-image {
+    transform: scale(2); /* Enlarge the image to 2x its size */
+    cursor: pointer; /* Pointer cursor for clicking when large */
+    
+}
+
+.star-class-types{
+    display: flex;
+    flex-direction:initial;
+}
+.types {
+    text-align: left;
+    padding: 1%;
+    background-color:rgba(116, 127, 205, 0.7) ;
+    border-radius: 20px;
+    margin: 1%;
+   
+}
+.types h4{
+    font-size: 25px;
+}
+.types p{
+    font-size: medium;
+}
+.types b{
+    font-weight: bold;
+    font-size: 19px;
+    color: #15ff00;
+}
+
+.fstars {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.stars{
+    width: 16%;
+    padding: 1%;
+    background-color:rgba(103, 38, 7, 0.7) ;
+    border-radius: 20px;
+    margin: 1%;
+}
+.stars p{
+    font-size: medium;
+    
+}
+.stars b{
+    font-size: large;
+    color: aqua;
+}
+.stars h4{
+    font-size: x-large;
+}
 /* Hamburger Menu Icon */
 .menu-icon {
     display: inline-block;
@@ -79,6 +256,8 @@ iframe {
     z-index: 1000;
     
 }
+
+
 
 /* Navigation Menu (Initially Hidden) */
 #site-navigation {

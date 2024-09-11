@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const requestBody = {
             "format": "png",
             "style": {
-                "moonStyle": "sketch",
+                "moonStyle": "default",
                 "backgroundStyle": "solid",
                 "backgroundColor": "black",
                 "headingColor": "brown",
@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "latitude": latitude,
                 "longitude": longitude,
                 "date": new Date().toLocaleDateString('en-CA') // Current date in "YYYY-MM-DD" format
+                
             },
             "view": {
                 "type": "portrait-simple",
@@ -145,3 +146,4 @@ document.addEventListener('DOMContentLoaded', () => {
     
 
 });
+

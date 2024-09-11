@@ -1,0 +1,99 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: skyblue;
+    color: #333;
+    
+}
+
+h1{
+    text-align: center;
+}
+#weather-info {
+    background-color: #007bff;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    display: inline-block;
+    width: 300px;
+    
+}
+.weather-item {
+    margin: 10px 0;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+/* Hamburger Menu Icon */
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px;
+    
+}
+
+.menu-icon .bar {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    z-index: 1000;
+    
+}
+
+/* Navigation Menu (Initially Hidden) */
+#site-navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    color: white;
+    transform: translateX(100%); /* Hidden by default */
+    transition: transform 0.3s ease;
+    z-index: 9999;
+}
+
+#site-navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 50px 0 0;
+    text-align: center;
+    
+}
+
+#site-navigation li {
+    padding: 10px 0;
+}
+
+#site-navigation a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+#site-navigation a:hover {
+    background-color: #575757;
+}
+
+/* Show Menu When Active */
+#site-navigation.active {
+    transform: translateX(0); /* Show the navigation */
+}
+
+/* Utility Class to Hide the Menu */
+.hidden {
+    display: none;
+}
