@@ -305,3 +305,236 @@ iframe {
 .hidden {
     display: none;
 }
+
+
+
+@media (max-width: 480px) {
+
+    /* Adjustments for the stars section */
+.stars-section {
+    padding: 1em;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
+
+.stars-section h2 {
+    color: violet;
+    font-size: 2em; /* Reduce font size for mobile */
+}
+
+#star-image {
+    width: 90%; /* Make image responsive */
+    height: auto;
+}
+
+/* Flex layout adjustments for star-info */
+.star-info {
+    display: flex;
+    flex-direction: column; /* Stack items vertically for mobile */
+    align-items: center;
+    padding: 1em;
+}
+
+/* General sections adjustments */
+.star-map, .constellation-info, .astronomy-facts, .stargazing-tips {
+    width: 100%; /* Full width on mobile */
+    text-align: center;
+    margin: 10px 0; /* Add margin for better spacing */
+}
+
+.star-map h3, .constellation-info h3, .star-classifications h3, .stargazing-tips h3, .famous-stars h3 {
+    font-size: 1.5em; /* Reduce font size for mobile */
+}
+
+.star-map p, .constellation-info p {
+    color: white;
+}
+
+.star-classifications p, .famous-stars p {
+    color: white;
+    font-size: large;
+}
+
+/* List styling */
+.star-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Anchor link styling */
+.star-info a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: medium;
+}
+
+/* Adjust stargazing tips for mobile */
+.stargazing-tips {
+    width: 100%;
+    background-color: rgba(128,128,128,0.6);
+    color: white;
+    border-radius: 15px;
+    border: 5px solid rgba(128,128,128,0.6);
+    padding: 10px;
+}
+
+.stargazing-tips h4 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.stargazing-tips p {
+    text-align: left;
+    font-size: 1em;
+}
+
+/* Adjust constellation grid for mobile */
+.constellations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items */
+    padding: 10px;
+}
+
+.constellation {
+    width: 90%; /* Full width on mobile */
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(94, 59, 59, 0.8);
+}
+
+.constellation h2 {
+    color: orange;
+    font-size: large;
+}
+
+/* Details section */
+.details {
+    display: none;
+    padding: 10px;
+    background-color: black;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    overflow-y: auto;
+}
+
+.details.show {
+    display: block;
+    max-height: 200px;
+    transition: max-height 0.5s ease-in, padding 0.5s ease-in;
+}
+
+/* Small image styling for mobile */
+.small-image {
+    width: 70%; /* Larger image for mobile */
+    height: auto;
+}
+
+.large-image {
+    transform: scale(1.5); /* Less zoom for mobile */
+}
+
+/* Star class types adjustments */
+.star-class-types {
+    display: flex;
+    flex-direction: column; /* Stack vertically on mobile */
+}
+
+.types {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(116, 127, 205, 0.7);
+    margin: 10px 0;
+}
+
+.types h4 {
+    font-size: 1.2em;
+}
+
+.types p {
+    font-size: medium;
+}
+
+/* Famous stars section */
+.fstars {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stars {
+    width: 45%; /* Adjust width for mobile */
+    margin: 10px;
+    background-color: rgba(103, 38, 7, 0.7);
+    padding: 10px;
+}
+
+.stars h4 {
+    font-size: 1.5em;
+}
+
+/* Menu styling */
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.menu-icon .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 6px 0;
+}
+
+#site-navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px; /* Adjust width for mobile */
+    background-color: #333;
+    color: white;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+#site-navigation ul {
+    padding: 0;
+    margin: 50px 0 0;
+    text-align: center;
+}
+
+#site-navigation li {
+    padding: 10px 0;
+}
+
+#site-navigation a {
+    color: white;
+    padding: 10px;
+}
+
+
+
+
+
+    .stars-section h2 {
+        font-size: 1.5em; /* Further adjust for mobile phones */
+    }
+
+    #star-image {
+        width: 100%;
+    }
+
+    .stargazing-tips h4 {
+        font-size: 1.2em;
+    }
+
+    .constellation {
+        width: 90%; /* Full width on mobile */
+    }
+
+    .stars {
+        width: 90%; /* Make stars section full width on mobile */
+    }
+}
