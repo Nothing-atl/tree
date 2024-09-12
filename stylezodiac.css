@@ -31,7 +31,7 @@ body {
 .zodiac-container h1 {
     font-size: 2em;
     color: #333;
-    font-family: fantasy;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .zodiac-grid {
@@ -88,7 +88,7 @@ body {
     overflow-y: auto; /* Allows scrolling if content exceeds the container height */
 }
 .zodiac-detail-container h1{
-    font-family: fantasy;
+    font-family: 'Times New Roman', Times, serif;
 }
 .zodiac-detail-container img {
     

@@ -1,5 +1,5 @@
 
-    /*// Your WeatherAPI key
+    // Your WeatherAPI key
     const apiKey = 'dac00fba5af1430a8af15139240809'; // Replace with your actual API key
 
     // Function to get user's location using Geolocation API
@@ -29,21 +29,22 @@
         .then(data => {
             // Extract relevant weather data
             const temp = data.current.temp_c; // Temperature in Celsius
-            const humidity = data.current.humidity; // Humidity percentage
+            //const humidity = data.current.humidity; // Humidity percentage
             const windSpeed = data.current.wind_kph; // Wind speed in km/h
-            const condition = data.current.condition.text; // Weather condition description
-            const icon = data.current.condition.icon; // Weather condition icon
+            //const condition = data.current.condition.text; // Weather condition description
+            //const icon = data.current.condition.icon; // Weather condition icon
 
             // Display the weather data
             document.getElementById('weather-info').innerHTML = `
                 <div><strong>Location:</strong> ${data.location.name}, ${data.location.country}</div>
                 <div><strong>Temperature:</strong> ${temp} °C</div>
-                <div><strong>Humidity:</strong> ${humidity} %</div>
-                <div><strong>Wind Speed:</strong> ${windSpeed} km/h</div>
-                <div><strong>Condition:</strong> ${condition}</div>
-                <img src="${icon}" alt="Weather icon">
+                
             `;
-        })
+        }) /*<div><strong>Humidity:</strong> ${humidity} %</div>
+        <div><strong>Wind Speed:</strong> ${windSpeed} km/h</div>
+        <div><strong>Condition:</strong> ${condition}</div>
+        <img src="${icon}" alt="Weather icon">*/
+        
         .catch(error => {
             document.getElementById('weather-info').innerHTML = `
                 <p>Error fetching weather data. Please try again later.</p>
@@ -74,10 +75,10 @@
 
     // Call the function to get the user's location and fetch weather data
     getUserLocation();
-*/
 
 
-   /* const apiKey = 'FB4WLYJ92TR2TBQQ5V8B9ADQW';  // Replace with your Visual Crossing API Key
+
+    /*const apiKey = 'FB4WLYJ92TR2TBQQ5V8B9ADQW';  // Replace with your Visual Crossing API Key
     const city = 'London,UK';
 
     fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}?unitGroup=us&key=${apiKey}`)
@@ -209,9 +210,9 @@
         });
         */
 
-        /*document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function() {
             const apiKey = 'dac00fba5af1430a8af15139240809';  // Replace with your WeatherAPI Key
-            const location = 'Surrey';  // You can replace this with any location
+            const location = 'Burnaby';  // You can replace this with any location
             
  
             
@@ -225,7 +226,7 @@
                 const locationName = data.location.name;
                 const country = data.location.country;
                 
-                // Display current weather data
+               /* // Display current weather data
                 document.getElementById('weather-info').innerHTML = `
                     <div class="weather-item"><strong>Location:</strong> ${locationName}, ${country}</div>
                     <div class="weather-item"><strong>Temperature:</strong> ${current.temp_c} °C</div>
@@ -233,7 +234,7 @@
                     <div class="weather-item"><strong>Wind Speed:</strong> ${current.wind_kph} km/h</div>
                     <div class="weather-item"><strong>Conditions:</strong> ${current.condition.text}</div>
                 `;
-                
+                */
                 // Handle hourly data
                 const hourlyData = data.forecast.forecastday[0].hour;
                 let hourlyHtml = '<ul>';
@@ -251,5 +252,7 @@
                 `;
                 console.error('Error:', error);
             });
+
+            
         });
-        */
+        

@@ -47,7 +47,7 @@
     color: rgb(64, 39, 3);
     background-color: white;
     height: 0%;
-    font-family: fantasy;
+    font-family: 'Times New Roman', Times, serif;
     
     
 }
@@ -76,7 +76,7 @@
 }
 .types p{
     overflow-y: auto;
-    font-family: fantasy;
+    font-family: 'Times New Roman', Times, serif;
     
 }
 

@@ -2,22 +2,23 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: skyblue;
+    background-color: rgb(1, 11, 23);
     color: #333;
     
 }
 
 h1{
     text-align: center;
+    color: #fff;
 }
 #weather-info {
-    background-color: #007bff;
+    background-color: #75808d;
     color: black;
     padding: 20px;
     border-radius: 10px;
     margin-top: 50px;
     display: inline-block;
-    width: 300px;
+    width: auto;
     
 }
 .weather-item {
@@ -26,7 +27,12 @@ h1{
 }
 
 
-
+#hourly-info{
+    background-color: #75808d;
+    width: 250px;
+    border-radius: 30px;
+    
+}
 
 
 
