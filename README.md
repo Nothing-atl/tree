@@ -1,2 +1,2 @@
-# moon-app
+# SKY
 moon phases, stars, meteors, sky, coffeee...
